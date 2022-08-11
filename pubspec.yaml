@@ -67,7 +67,15 @@ flutter:
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
+  fonts:
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Metropolis-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Metropolis-Regular.otf
+          weight: 400
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a

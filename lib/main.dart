@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'screens/home_page.dart';
 
 void main() {
@@ -16,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Metropolis',
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the

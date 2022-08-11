@@ -91,6 +91,7 @@ class MyHomePage extends StatelessWidget {
                 height: 44,
                 child: TabBar(
                   indicatorColor: Color.fromARGB(255, 239, 54, 81),
+                  indicatorWeight: 3,
                   tabs: [
                     Text(
                       'Women',
