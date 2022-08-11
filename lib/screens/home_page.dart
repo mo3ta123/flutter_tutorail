@@ -87,7 +87,7 @@ class MyHomePage extends StatelessWidget {
             ),
             bottom: PreferredSize(
               preferredSize: Size(MediaQuery.of(context).size.width, 44),
-              child: Container(
+              child: const SizedBox(
                 height: 44,
                 child: TabBar(
                   indicatorColor: Color.fromARGB(255, 239, 54, 81),
@@ -132,7 +132,10 @@ class MyHomePage extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              const Button(),
+              const Button(
+                title: "Summer Sale",
+                subTitle: "Up to 50% off",
+              ),
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),

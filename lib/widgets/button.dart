@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button({Key? key}) : super(key: key);
-
+  const Button({Key? key, required this.title, required this.subTitle})
+      : super(key: key);
+  final String title;
+  final String subTitle;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,20 +20,20 @@ class Button extends StatelessWidget {
           onPressed: () => {},
           splashColor: Colors.redAccent,
           child: Column(
-            children: const [
+            children: [
               Text(
-                "Summer Sale",
+                title,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: 'Metropolis',
                   fontSize: 24,
                   fontWeight: FontWeight.w400,
                 ),
               ),
               Text(
-                "Up to 50% off",
+                subTitle,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontFamily: 'Metropolis',
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
