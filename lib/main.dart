@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const DefaultTabController(length: 3, child: MyHomePage()),
+      home: MyHomePage(),
     );
   }
 }
